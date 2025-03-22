@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | XploitLock</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container nav-content">
+        <div class="nav-brand">
+            <img src="assets/logo.png" alt="Logo XploitLock" class="logo">
+            <span class="brand-text">XploitLock</span>
+          </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contacto">
+      <div class="container">
+        <h1>Contacto</h1>
+        <p>¿Quieres proteger tu red o pedir un presupuesto? Escríbenos sin compromiso:</p>
+
+        <form action="mailto:info@xploitlock.es" method="post" enctype="text/plain">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+          <button type="submit">Enviar mensaje</button>
+        </form>
+
+        <p>O si lo prefieres, escríbenos directamente a <a href="mailto:info@xploitlock.es">info@xploitlock.es</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 XploitLock. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

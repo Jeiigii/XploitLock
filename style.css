@@ -1,0 +1,220 @@
+/* XploitLock - Estilos base y extendidos */
+
+:root {
+    --color-bg: #ffffff;
+    --color-text: #121212;
+    --color-accent: #00BFFF;
+    --color-light-gray: #f2f2f2;
+    --color-dark: #1e1e1e;
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    font-family: var(--font-main);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 960px;
+    margin: auto;
+    padding: 2rem 0;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: var(--color-dark);
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .nav-brand .logo {
+    width: 40px;
+    height: auto;
+  }
+  
+  .nav-brand .brand-text {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-links li a.active,
+  .nav-links li a:hover {
+    color: var(--color-accent);
+  }
+  
+  /* Hero */
+  .hero {
+    background-color: var(--color-light-gray);
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtext {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn-cta {
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .btn-cta:hover {
+    background-color: #0095cc;
+  }
+  
+  /* Secciones */
+  section {
+    padding: 2rem 0;
+  }
+  
+  h2 {
+    color: var(--color-accent);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Tarjetas de servicio */
+  .servicio-card {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .servicio-card h2 {
+    margin-top: 0;
+  }
+  
+  .precio {
+    font-weight: bold;
+    color: var(--color-accent);
+    margin-top: 1rem;
+  }
+  
+  /* Formulario de contacto */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin-top: 1rem;
+  }
+  
+  input, textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: var(--font-main);
+  }
+  
+  button[type="submit"] {
+    background-color: var(--color-accent);
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0095cc;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--color-light-gray);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  a {
+    color: var(--color-accent);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+      padding-top: 1rem;
+    }
+  
+    .nav-links li {
+      padding: 0.5rem 0;
+    }
+  
+    .nav-brand {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  
+  
