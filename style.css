@@ -260,6 +260,53 @@
   .blog-card a:hover {
     text-decoration: underline;
   }
+  /* --- Estilos para sección de servicios --- */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .service-card {
+    background-color: #1f1f1f;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.3);
+  }
+  
+  .service-card h2 {
+    color: #00BFFF;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .service-card p {
+    color: #ccc;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+  
+  .service-card a {
+    background-color: #00BFFF;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .service-card a:hover {
+    background-color: #0099cc;
+  }
   
   
   
